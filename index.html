@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet SIG - Webmapping</title>
+    <link rel="stylesheet" href="mise_en_page_css.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="top-header">
+        <h1>Rennes : ville du quart d'heure ? </h1>
+    </div>
+
+    <!-- MENU -->
+    <nav class="navbar">
+        <ul>
+            <li class="menu1">
+                <h4><a href="#carte1">Accessibilité aux commerces spécialisés</a></h4>
+            </li>
+            <li class="menu1">
+                <h4><a href="#carte2">Carte de synthèse</a></h4>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+<section class="hero">
+    <h1>Métropole rennaise </h1>
+    <h2>Ville du quart d'heure : taux d'accès aux services, équipements, commerces</h2>
+</section>
+
+<section class="bloc">
+    <h2>Contexte</h2>
+    <p>Les villes contemporaines font face à un double défi : répondre à une demande croissante de
+qualité de vie tout en s'inscrivant dans une trajectoire de développement durable. Dans ce
+contexte, le concept de « ville du quart d'heure », popularisé par le chercheur franco-colombien
+Carlos Moreno, propose une refonte profonde de l'organisation urbaine. L'idée centrale est
+simple : chaque habitant doit pouvoir accéder, en quinze minutes à pied ou à vélo depuis son
+domicile, à l'ensemble des services et équipements essentiels à sa vie quotidienne. </p>
+</section>
+
+<!-- ================= CARTE 1 ================= -->
+<section class="bloc carte" id="carte1">
+    <div class="text-carte">
+        
+        <!-- Texte à gauche -->
+        <div class="texte">
+            <h2>Commerces spécialisés</h2>
+            <p>Cette carte représente le taux d'accès de la populations de la métropole rennaise aux commerces spécialisés (type boulangerie, pâtisserie, boucherie, poissonnerie, fromagerie). Ici, la méthodologie appliquée est celle des isochrones : à partir des emplacements de ces commerces (Base Permanente des Équipements, INSEE), on calcule des isochrones, représentant des déplacements autour de ces points précis de 15 minutes à pieds, en tenant compte de la voierie, des chemins piétons, etc. Il y a ici une meilleure précision par rapport à des buffers classiques, calculant une distance à vol d'oiseau. Ici, c'est 86% de la population qui est concernée. On remarque une population urbaine très concernée, au détriment de la population rurale.   </p>
+        </div>
+
+        <!-- Carte à droite -->
+        <div class="carte-container">
+            <iframe src="carte_commerce/index.html" class="mapframe"></iframe>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= CARTE 2 ================= -->
+<section class="bloc carte" id="carte2">
+    <div class="text-carte">
+        
+        <!-- Carte à gauche -->
+        <div class="carte-container">
+            <iframe src="carte_rennes/index.html" class="mapframe"></iframe>
+        </div>
+
+        <!-- Texte à droite -->
+        <div class="texte">
+            <h2>Carte de synthèse</h2>
+            <p>Ici, chaque carreau de 200x200m provient du carroyage INSEE (2025) et contient différentes information (popualtion, nombre de ménage, taux de pauvreté, etc.). Ici, après avoir effectué plusieurs cartes comme ci dessus portant sur différents services et commerces (santé, loisir, supermarché...), il a été possible de croiser tous ces isochrones afin de créer cette carte de synthèse, type "heatmap", où plus le score est élevé (ici en pourcentage d'accèssibilité), plus les habitants de chaque carreau ont accès à un nombre importantd e services et commerces à moins de 15 minutes à pieds. Ainsi, précédemment avec la carte des commerces spécialisés, il est ressori un taux de 86% de personnes ayant accès. Ce qui paraissait grand, et qui l'est, mais on se rend compte au final que la moyenne pour chacun est d'environ 80%, ce qui en veut pas dire que 80% de la métropole est couverte par un accès à 15 minutes à pieds à tous les services et commerces essentiels, mais en réalité 80% de la population. Celle-ci principalement urbaine, notamment dans le centre de Rennes (qui contient près de 50% des habitants de la métropole), au détriment des populations rurales, petites villes et villages éloignés. Concrètement, environ 80% des habitants de la métropole rennaise ont accès à moins de 15 minutes à une majorité de services, et 20% ont n'ont accès à rien, ou presque aucun service et commerce. </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= Conclusion ================= -->
+<section class="bloc carte">
+    <h2><em>Conclusion</em></h2>
+    <h4>La pauvreté est une problématique particulièrement importante en Martinique et à la Réunion. Il est essentiel de mettre en place des politiques et des actions pour réduire les inégalités et améliorer les conditions de vie des populations. </h4>
+</section>
+
+<footer>
+    <p>© 2026 – LAZIOU Gaëtan</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
